@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+
+    body{
+        height: 100vh;
+        width: 100%;
+        display:flex;
+        justify-content: center; 
+        align-items: center; 
+        align-content: center;
+        font-size: 30px;
+
+    }
+    .geral{
+        background-color: rgb(1, 1, 7);
+        height: 300px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+    }
+    #central{
+        background-color: rgb(241, 122, 10);
+        width: 300px;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        flex-direction: row;
+    }
+
+    #D38{
+        width: 100px;
+        height: 100px;
+        background-color: rgb(238, 16, 201);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        }
+    #D37{
+        width: 100px;
+        height: 100px;
+        background-color:  rgb(10, 235, 21);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    #meio{
+        width: 100px;
+        height: 100px;
+        background-color: rgb(209, 8, 92);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    #D39{
+        width: 100px;
+        height: 100px;
+        background-color: rgb(13, 121, 243);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    #D40{
+        width: 100px;
+        height: 100px;
+        background-color: rgb(180, 124, 226);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    
+
+</style>
+</head>
+<body>
+    <div class="geral">
+        <div id="D38"> 
+            D38 
+        </div>
+        <div id="central">
+            <div id ="D37"> 
+            D37 
+            </div>
+            <div id="meio"> 
+                meio
+            </div>
+            <div id="D39"> 
+                D39 
+            </div>
+        </div>
+        <div id="D40"> 
+            D40
+        </div>
+    </div>
+</body>
+<script>
+document.onkeydown = pega_tecla;
+   
+   function pega_tecla (evento)
+   {
+    codigo_tecla = evento.keyCode
+
+
+    console.log(codigo_tecla)
+    if(codigo_tecla==38)
+    {
+        document.getElementById("D38").style.backgroundColor = "yellow"
+        document.getElementById("D37").style.backgroundColor = "rgb(10, 235, 21)"
+        document.getElementById("D39").style.backgroundColor = "rgb(13, 121, 243)"
+        document.getElementById("D40").style.backgroundColor = "rgb(180, 124, 226)"
+    }
+    if(codigo_tecla==37)
+    {
+        document.getElementById("D38").style.backgroundColor = "rgb(238, 16, 201)"
+        document.getElementById("D37").style.backgroundColor = "yellow"
+        document.getElementById("D39").style.backgroundColor = "rgb(13, 121, 243)"
+        document.getElementById("D40").style.backgroundColor = "rgb(180, 124, 226)"
+    }
+    if(codigo_tecla==39)
+    {
+        document.getElementById("D38").style.backgroundColor = "rgb(238, 16, 201)"
+        document.getElementById("D37").style.backgroundColor = "rgb(10, 235, 21)"
+        document.getElementById("D39").style.backgroundColor = "yellow"
+        document.getElementById("D40").style.backgroundColor = "rgb(180, 124, 226)"
+    }
+    if(codigo_tecla==40)
+    {
+        document.getElementById("D38").style.backgroundColor = "rgb(238, 16, 201)"
+        document.getElementById("D37").style.backgroundColor = "rgb(10, 235, 21)"
+        document.getElementById("D39").style.backgroundColor = "rgb(13, 121, 243)"
+        document.getElementById("D40").style.backgroundColor = "yellow"
+    }
+
+   }
+</script>
+</html>

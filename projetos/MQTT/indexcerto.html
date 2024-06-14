@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conexão MQTT</title>
+    <style>
+
+.resposta{
+    
+    width: 600px;
+    height:400px;
+    background-color: rgb(236, 118, 217);
+    overflow-y: scroll;
+    margin-bottom: 20px;
+ }
+body{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    background-color: rgb(221, 36, 159);
+    color: rgb(0, 0, 0);
+}
+
+     
+    </style>
+</head>
+<body>
+    <div class="certo">
+    
+    Apelido: <input type="text" id="apelido" size="5">
+    Mensagem <input type="text" id="texto" size="50">
+    <button onclick="Enviar();"> OK</button>
+    <br> <br>
+    <div class="resposta" id="resposta"></div>
+   
+    
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js"> </script>
+
+<script>
+
+    topico= "cedup/texto"
+    client = new Paho.MQTT.Client("broker.hivemq.com", Number(8000),"")
+    client.connect( {onSuccess:Conectou} )
+
+    function Conectou() {
+        client.subscribe(topico)
+        message = new Paho.MQTT.Message('')
+        message.destinationName = topico
+    }
+
+    client.onConnectionLost = Conexao_Perdida
+    client.onMessageArrived = Mensagem_Chegou
+
+    function Conexao_Perdida(responseObject){
+        if (responseObject.errorCode !==0) {
+            resposta.innerHTML += "Desconectado: " + responseObject.errorMenssage
+        }
+    }
+
+    function Mensagem_Chegou(message){
+        resposta.innerHTML += "<br>"
+        resposta.innerHTML += message.payloadString
+    }
+
+    function Enviar(){
+        valor = apelido.value + ": " + texto.value
+        message = new Paho.MQTT.Message(valor)
+        message.destinationName = topico
+        client.send(message)
+    }
+</script>
+</html>

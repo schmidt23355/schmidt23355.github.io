@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="Maribela.js" defer></script>
+    <link rel="stylesheet" href="Maribela.css">
+    <title>Formulário - Loja Maribela's</title>
+</head>
+<body>
+    <form action="javascript:alert('Formulário aprovado para envio')" id="form">
+        <div> 
+            <h1 id ="titulo">Cadastro de informações</h1>
+            <p id ="subititulo">Por favor, preencha o formulário abaixo para fazer seu pedido de roupas na nossa loja Maribela's:</p>
+            <br>
+        </div>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="uid">Nome Completo</label>
+                <input type="text" name="uid" id="uid" pattern="[A-Za-zÀ-ÿ\s]{8,40}" placeholder="Seu nome" required>
+                <br>
+            </div>
+        </fieldset>
+        <div class="campo">
+            <label for="cpf">CPF</label>
+            <input type="text" name="cpf" id="cpf" minlength="14" maxlength="14" placeholder="CPF" required>
+            <br>
+        </div>
+        <div class="campo">
+            <label for="tel">Telefone</label>
+            <input type="tel" name="tel" id="tel" minlength="14" maxlength="15" placeholder="(XX)XXXXX-XXXX" required>
+            <br>
+        </div>
+        <div class="campo">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="email@gmail.com" required>
+            <br>
+        </div>
+        <fieldset class="grupo">
+            <div class="campo">
+                <p>Endereço de entrega</p>
+                <label for="cep">CEP</label>
+                <input type="text" name="cep" id="cep" minlength="9" maxlength="9" pattern="[0-9\-]*" placeholder="CEP" required >
+                <br>
+            </div>
+            <div class="campo">
+                <label for="rua">Rua</label>
+                <input type="text" name="rua" id="rua" placeholder="Rua" disabled>
+                <br>
+            </div>
+            <div class="campo">
+                <label for="cidade">Cidade</label>
+                <input type="text" name="cidade" id="cidade" placeholder="Cidade" disabled>
+                <br>
+            </div>
+            <div class="campo">
+                <label for="num_casa">Numero da casa</label>
+                <input type="text" name="num_casa" id="num_casa" placeholder="Número da casa" minlength="1" maxlength="5" required>
+                <br>
+            </div>
+            <div class="campo">
+                <label for="estado">Estado</label>
+                <input type="text" name="estado" id="estado" placeholder="Estado" disabled>
+                <br><br>
+            </div>
+    </fieldset>
+    <div class="campo">
+        <label for="moda">Tipo de moda:</label>
+        <select id="moda" name="moda" required>
+            <option value="masc">Moda Masculina</option>
+            <option value="fem">Moda Feminina</option>
+            <option value="inf">Moda Infantil</option>
+        </select>
+        <br><br>
+    </div>
+    <div class="campo">
+        <label> Selecione o item desejado:</label>
+        <br>
+        <label for="opção">Camisa
+            <input type="radio" name="opção" id="camisa" value="camisa" required>
+        </label>  
+        <label for="opção">Calça
+            <input type="radio" name="opção" id="Calça" value="Calça">
+        </label> 
+        <label for="opção">Shorts
+            <input type="radio" name="opção" id="Shorts" value="Shorts">
+        </label>
+        <label for="opção">Vestidos
+            <input type="radio" name="opção" id="Vestidos" value="Vestidos">
+        </label>
+        <label for="opção">Moletons
+            <input type="radio" name="opção" id="Moletons" value="Moletons">
+        </label>
+        <label for="opção">Macacão
+            <input type="radio" name="opção" id="Macacão" value="Macacão">
+        </label>
+        <label for="opção">Saias
+            <input type="radio" name="opção" id="Saias" value="Saias">
+        </label>
+        <br><br>
+    </div>
+    <div class="campo">
+        <label> Tamanho aplicavel:</label>
+        <br>
+        <label for="opção2">PP
+            <input type="radio" name="opção2" id="PP" value="PP" required>
+        </label>  
+        <label for="opção2">P
+            <input type="radio" name="opção2" id="P" value="P">
+        </label> 
+        <label for="opção2">M
+            <input type="radio" name="opção2" id="M" value="M">
+        </label>
+        <label for="opção2">G
+            <input type="radio" name="opção2" id="G" value="G">
+        </label>
+        <label for="opção2">GG
+            <input type="radio" name="opção2" id="GG" value="GG">
+        </label>
+        <label for="opção2">G3
+            <input type="radio" name="opção2" id="G3" value="G3">
+        </label>
+        <br><br>
+    </div>
+    <div class="campo">
+        <label> Cor da peça:</label>
+        <br>
+        <label for="opção3">Preto
+            <input type="radio" name="opção3" id="Preto" value="Preto" required>
+        </label>  
+        <label for="opção3">Branco
+            <input type="radio" name="opção3" id="Branco" value="Branco">
+        </label> 
+        <label for="opção3">Azul
+            <input type="radio" name="opção3" id="Azul" value="Azul">
+        </label>
+        <label for="opção3">Vermelho
+            <input type="radio" name="opção3" id="Vermelho" value="Vermelho">
+        </label>
+        <label for="opção3">Verde
+            <input type="radio" name="opção3" id="Verde" value="Verde">
+        </label>
+        <label for="opção3">Outro (especifique):
+            <input type="radio" name="opção3" id="opção3"> 
+            <input type="text" name="opção3" id="Outro" placeholder="Outra cor">
+        </label>
+        <br><br>
+    </div>
+    <div class="campo">
+        <label for="Quant">Quantidade de cada item:</label>
+        <input type="number" name="Quant" id="Quant" placeholder="Quantidade" required >
+        <br>
+    </div>
+    <div class="campo">
+        <label for="dia">Dia esperado da entrega:</label>
+        <input type="date" name="dia" id="dia" required >
+        <br>
+    </div>
+    <div class="campo">
+        <label for="req">Algum requisito específico ou instrução adicional</label>
+        <input type="text" name="req" id="req" placeholder="Requisto ou Adicional">
+        <br><br>
+    </div>
+    <div class="campo">
+        <label>Método de Pagamento Preferido</label>
+        <br>
+        <label for="opção4">Cartão de Crédito
+            <input type="radio" name="opção4" id="C.C" value="C.C" required>
+        </label>  
+        <label for="opção4">Cartão de Débito
+            <input type="radio" name="opção4" id="C.D" value="C.D">
+        </label> 
+        <label for="opção4">Transferência Bancária
+            <input type="radio" name="opção4" id="T.B" value="T.B">
+        </label>   
+        <label for="opção4"> PayPal
+            <input type="radio" name="opção4" id="P.P" value="P.P">
+        </label>  
+        <label for="opção4">Outro (especifique):
+            <input type="radio" name="opção4" id="opção4">
+            <input type="text" name="Outro2" id="Outro2" placeholder="Outra forma de pagamento">
+        </label>  
+        <br><br>
+    </div>
+    <div class="campo">
+        <label>Termos de uso:</label>
+        <br>
+        <label for="lic">
+            <div class="text">aceito os termos de uso e a politica de privacidade</div>
+        </label>
+        <input type="checkbox" name="lic" id="lic" required>
+        <br>
+    </div>
+    <div class="botão-container">
+        <button class="botão" type="submit" value="Enviar">Enviar</button>
+      </div>
+    </form>
+</body>
+</html>

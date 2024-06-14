@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js"></script>
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1>Calculadora de Área da Superfície de Prisma Triangular</h1>
+    <label for="lado">Lado, b:</label>
+    <input type="number" id="b">
+    <br>
+    <label for="altura">Altura do Triângulo:</label>
+    <input type="number" id="a">
+    <br>
+    <label for="altura_prisma">Altura do Prisma:</label>
+    <input type="number" id="h">
+    <br>
+    <button onclick="calcularArea()">Calcular Área da Superfície</button>
+    <br>
+    <label for="resultado">Área da Superfície do Prisma (m²):</label>
+    <input type="text" id="resultado" disabled>  
+    <p>Fórmula: As = ab + bh + bh + bh</p>
+    <br>
+    <h1>Calculadora de Volume de um Prisma Triangular</h1>
+    <label for="base2">Base do Triângulo (b):</label>
+    <input type="number" id="base_prisma">
+    <br>
+    <label for="altura2">Altura do Triângulo (a):</label>
+    <input type="number" id="alt2">
+    <br>
+    <label for="alt_prisma">Altura do Prisma (h):</label>
+    <input type="number" id="altura_prisma">
+    <br>
+    <button onclick="calcularVolume()">Calcular Volume</button>
+    <br>
+    <label for="resultado2">Volume do Prisma (unidades cúbicas):</label>
+    <input type="text" id="resultado_prisma" disabled>
+    <br>
+    <label for="resultado_base">Resultado da Abase (unidades cúbicas):</label>
+    <input type="text" id="resultado_baseprisma" disabled>
+    <p>Fórmula: V = Abase × altura</p>
+</body>
+</html>

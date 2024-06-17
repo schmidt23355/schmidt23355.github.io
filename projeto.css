@@ -1,6 +1,11 @@
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
+    font-family: "Roboto Mono", monospace;
+}
+a{
+    text-decoration: none;
+    color: black;
 }
 body{
     display: flex;
@@ -8,8 +13,41 @@ body{
     background-color: rgba(230, 230, 230, 1);
     width: 100vw;
     height: 100vh;
+}
+.cabecalho{
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    border-bottom: 3px solid rgb(255 255 255);
+}
+.bolinha{
+    background-color: yellow;
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+.nome{
+    height: 70px;
+    width: 224px;
+    margin-left: 40px;
+    display: flex;
     align-items: center;
     justify-content: center;
+}
+.opcoes{
+    height: 70px;
+    width: 410px;
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+}
+.traco{
+    margin-right: 12px;
+    font-size: 35px;
 }
 .geral2{
     width: 1101px;

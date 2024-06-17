@@ -5,10 +5,13 @@
 body{
     width: 100vw;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .geral{
     display: flex;
-    width: 600px;
-    height: 400px;
+    width: 1100px;
+    height: 580px;
     background-color: red;
 }

@@ -25,3 +25,12 @@ body{
     height: 500px;
     background-color: yellow;
 }
+.parte1{
+    display: flex;
+    flex-direction: column;
+}
+.projeto{
+    width: 100px;
+    height: 125px;
+    background-color: white;
+}

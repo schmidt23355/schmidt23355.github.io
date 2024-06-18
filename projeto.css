@@ -62,8 +62,9 @@ body{
     justify-content: space-around;
     align-items: center;
     width: 370px;
-    height: 500px;
+    height: 550px;
     background-color: yellow;
+    margin-top: 10px;
 }
 .parte2{
     display: flex;
@@ -71,8 +72,9 @@ body{
     justify-content: flex-start;
     align-items: center;
     width: 370px;
-    height: 500px;
+    height: 550px;
     background-color: green;
+    margin-top: 10px;
 }
 .parte3{
     display: flex;
@@ -80,17 +82,84 @@ body{
     justify-content: space-around;
     align-items: center;
     width: 370px;
-    height: 500px;
+    height: 550px;
     background-color: blue;
+    margin-top: 10px;
 }
 .projeto{
-    width: 210px;
-    height: 220px;
+    width: 230px;
+    height: 255px;
     background-color: white;
+    border: 2px solid black;
 }
 .projetoMeio{
-    width: 180px;
-    height: 190px;
+    width: 200px;
+    height: 225px;
     background-color: white;
     margin-top: 20px;
+    border: 2px solid black;
+}
+.foto{
+    background-color: red;
+    width: 230px;
+    height: 130px;
+}
+.img{
+    width: 230px;
+    height: 130px;
+}
+.img2{
+    width: 230px;
+    height: 130px;
+}
+.img3{
+    width: 200px;
+    height: 110px;
+}
+.img5{
+    width: 230px;
+    height: 130px;
+}
+.titulo{
+    width: 230px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+.texto{
+    background-color: orange;
+    width: 230px;
+    height: 125px;
+}
+.texto2{
+    background-color: white;
+    width: 230px;
+    height: 61px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.fotoMeio{
+    background-color: red;
+    width: 200px;
+    height: 110px;
+}
+.textoMeio{
+    background-color: orange;
+    width: 200px;
+    height: 115px;
+    text-align: center;
+}
+.tituloMeio{
+    width: 200px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
 }

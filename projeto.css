@@ -63,7 +63,6 @@ body{
     align-items: center;
     width: 370px;
     height: 550px;
-    background-color: yellow;
     margin-top: 10px;
 }
 .parte2{
@@ -73,7 +72,6 @@ body{
     align-items: center;
     width: 370px;
     height: 550px;
-    background-color: green;
     margin-top: 10px;
 }
 .parte3{
@@ -83,24 +81,20 @@ body{
     align-items: center;
     width: 370px;
     height: 550px;
-    background-color: blue;
     margin-top: 10px;
 }
 .projeto{
     width: 230px;
     height: 255px;
-    background-color: white;
     border: 2px solid black;
 }
 .projetoMeio{
     width: 200px;
     height: 225px;
-    background-color: white;
     margin-top: 20px;
     border: 2px solid black;
 }
 .foto{
-    background-color: red;
     width: 230px;
     height: 130px;
 }
@@ -144,12 +138,10 @@ body{
     text-align: center;
 }
 .fotoMeio{
-    background-color: red;
     width: 200px;
     height: 110px;
 }
 .textoMeio{
-    background-color: orange;
     width: 200px;
     height: 115px;
     text-align: center;

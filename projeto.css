@@ -147,6 +147,7 @@ body{
     text-align: center;
 }
 .tituloMeio{
+    background-color: orange;
     width: 200px;
     height: 55px;
     display: flex;

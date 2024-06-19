@@ -86,11 +86,13 @@ body{
 .projeto{
     width: 230px;
     height: 255px;
+    background-color: white;
     border: 2px solid black;
 }
 .projetoMeio{
     width: 200px;
     height: 225px;
+    background-color: white;
     margin-top: 20px;
     border: 2px solid black;
 }
@@ -129,6 +131,7 @@ body{
     height: 125px;
 }
 .texto2{
+    flex-direction: column;
     background-color: white;
     width: 230px;
     height: 61px;
@@ -155,4 +158,10 @@ body{
     align-items: center;
     border-bottom: 2px solid black;
     border-top: 2px solid black;
+}
+.link{
+    color: blue;
+}
+.link:hover{
+    color: green;
 }

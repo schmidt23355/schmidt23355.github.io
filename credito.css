@@ -8,16 +8,17 @@ a{
     color: black;
 }
 body{
-    display: flex;
-    flex-direction: column;
     background-color: rgba(230, 230, 230, 1);
-    width: 100vw;
-    height: 100vh;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    width: 100vw;
+    height: fit-content;
+    flex-direction: column;
 }
 .cabecalho{
     width: 100vw;
-    height: 70px;
+    height: fit-content;
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
@@ -59,12 +60,13 @@ body{
     margin-top: 50px;
 }
 .parte1{
-    width: 270px;
-    height: 435px;
+    width: 100vw;
+    height: fit-content;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 .parte2{
     width: 270px;
@@ -87,7 +89,8 @@ body{
     height: 195px;
     display: flex;
     flex-direction: column;
-    border: 2px solid black
+    border: 2px solid black;
+    margin: 20px;
 }
 .titulo{
     width: 225px;

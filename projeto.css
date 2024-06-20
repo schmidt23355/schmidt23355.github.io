@@ -8,15 +8,17 @@ a{
     color: black;
 }
 body{
-    display: flex;
-    flex-direction: column;
     background-color: rgba(230, 230, 230, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100vw;
     height: 100vh;
+    flex-direction: column;
 }
 .cabecalho{
     width: 100vw;
-    height: 70px;
+    height: fit-content;
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
@@ -58,43 +60,20 @@ body{
 }
 .parte1{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 370px;
-    height: 550px;
+    width: 70vw;
+    height: fit-content;
     margin-top: 10px;
-}
-.parte2{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    width: 370px;
-    height: 550px;
-    margin-top: 10px;
-}
-.parte3{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    width: 370px;
-    height: 550px;
-    margin-top: 10px;
+    flex-wrap: wrap
 }
 .projeto{
     width: 230px;
     height: 255px;
     background-color: white;
     border: 2px solid black;
-}
-.projetoMeio{
-    width: 200px;
-    height: 225px;
-    background-color: white;
-    margin-top: 20px;
-    border: 2px solid black;
+    margin: 20px;
 }
 .foto{
     width: 230px;
@@ -139,25 +118,6 @@ body{
     align-items: center;
     justify-content: center;
     text-align: center;
-}
-.fotoMeio{
-    width: 200px;
-    height: 110px;
-}
-.textoMeio{
-    width: 200px;
-    height: 115px;
-    text-align: center;
-}
-.tituloMeio{
-    background-color: orange;
-    width: 200px;
-    height: 55px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 2px solid black;
-    border-top: 2px solid black;
 }
 .link{
     color: blue;

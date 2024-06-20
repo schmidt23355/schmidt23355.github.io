@@ -5,8 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="index.js"></script>
     <title>Calculadora</title>
+    <style>
+        .seta{
+            width: 100px;
+            transform: rotate(270deg);
+            position: relative;
+            z-index: 10;
+        }
+    </style>
 </head>
 <body>
+    <div class="seta">
+        <img class="seta" src="seta.gif" alt="">
+    </div>
     <h1>Calculadora de Área da Superfície de Prisma Triangular</h1>
     <label for="lado">Lado, b:</label>
     <input type="number" id="b">

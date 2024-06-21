@@ -5,7 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fundo do Mar</title>
+    <script defer>
+        function teste(){
+          const aside = document.querySelectorAll(".aside")[0]
+          const aberto = document.querySelectorAll(".aberto")[0]
+          console.log(aside.style.width)
+
+          if(aside.style.width == "0vw"){
+              aside.style.width = "50vw";
+              setTimeout(function() {
+                  aberto.style.display = "flex";
+              }, 450); 
+              
+          }else{
+              aside.style.width = "0vw";
+              aberto.style.display = "none";
+          }
+      }
+  </script>
     <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
         body{
                 height: 100vh;
                 width: 100%;
@@ -31,13 +53,55 @@
             animation:anima_submarino 20s infinite;
             position:absolute;
         }
-        .seta{
-            width: 100px;
-            transform: rotate(270deg);
+        .botao{
             position: absolute;
-            z-index: 10;
-            left: -55px;
-            top: 20px;
+            top: 10px;
+            left: 10px;
+            z-index: 2;
+        }
+        .separado{
+        width: 50vw;
+        height: 100%;
+        }
+        .titulo{
+            margin-top: 70px;
+            margin-bottom: 30px;
+            background-color: wheat;
+            width: 50vw;
+            display: flex;
+            justify-content: center;
+            border-bottom: 5px solid black;
+            border-top: 5px solid black;
+            height: fit-content;
+        }
+        .links{
+            text-decoration: none;
+            background: white;
+            margin-bottom: 22px;
+            width: 50vw;
+            height: fit-content;
+            display: flex;
+            justify-content: center;
+            border-bottom: 5px solid black;
+            border-top: 5px solid black;    
+        }
+        .aberto{
+        display: none;
+        flex-direction: column;
+        height: 80vw;
+        width: 100vw;
+        align-items: center;
+        }
+        aside{
+            display: flex;
+            transition: 0.5s ease-in-out;
+            background: rgb(226 96 96);
+            position: absolute;
+            width: 0vw;
+            height: -webkit-fill-available;
+            z-index: 1;
+            border-right: 5px solid black;
+            border-bottom: 5px solid black; 
         }
         @keyframes anima_submarino {
             0% 
@@ -61,11 +125,23 @@
 </style>
 </head>
 <body>
+    <div class="separado">
+        <button class="botao" onclick="teste()">Clique aqui</button>
+        <aside class="aside">
+            <div class="aberto">
+                <h1 class="titulo">Acessar projetos:</h1>
+                <a class="links" href="../Animação com keyframes/mar (2).html">Animação com Keyframes</a>
+                <a class="links" href="../Calculadora/index.html">Calculadora</a>
+                <a class="links" href="../Exemplo LocalStorage/index.html">Exemplo localhost</a>
+                <a class="links" href="../Formulario/Maribela.html">Formulário</a>
+                <a class="links" href="../MQTT/indexcerto.html">MQTT</a>
+                <a class="links" href="../Pega teclas/teclas2.html">Pega Teclas</a>
+                <a class="links" href="../../projeto.html">Voltar para pagina de projetos</a>
+            </div>
+        </aside>
+    </div>
     <div class="d1">
         <img class="submarino" src="submarino.gif">
-    </div>
-    <div class="seta">
-        <a href="/projeto.html"><img class="seta" src="./seta.gif" alt=""></a>
     </div>
 </body>
 </html>

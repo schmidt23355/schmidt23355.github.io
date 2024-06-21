@@ -5,17 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-<style>
+    <script defer>
+          function teste(){
+            const aside = document.querySelectorAll(".aside")[0]
+            const aberto = document.querySelectorAll(".aberto")[0]
+            console.log(aside.style.width)
 
+            if(aside.style.width == "0vw"){
+                aside.style.width = "50vw";
+                setTimeout(function() {
+                    aberto.style.display = "flex";
+                }, 450); 
+                
+            }else{
+                aside.style.width = "0vw";
+                aberto.style.display = "none";
+            }
+        }
+    </script>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .aberto{
+        display: none;
+        flex-direction: column;
+        height: 80vw;
+        width: 100vw;
+        align-items: center;
+    }
+    aside{
+        display: flex;
+        transition: 0.5s ease-in-out;
+        background: rgb(226 96 96);
+        position: absolute;
+        width: 0vw;
+        height: -webkit-fill-available;
+        z-index: 1;
+        border-right: 5px solid black;
+        border-bottom: 5px solid black; 
+    }
     body{
         height: 100vh;
         width: 100%;
         display:flex;
-        justify-content: center; 
+        justify-content: flex-start; 
         align-items: center; 
         align-content: center;
         font-size: 30px;
-
     }
     .geral{
         background-color: rgb(1, 1, 7);
@@ -83,11 +121,56 @@
         align-items: center;
         align-content: center;
     }
-    
-
+    .botao{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 2;
+    }
+    .separado{
+        width: 50vw;
+        height: 100%;
+    }
+    .titulo{
+        margin-top: 70px;
+        margin-bottom: 30px;
+        background-color: wheat;
+        width: 50vw;
+        display: flex;
+        justify-content: center;
+        border-bottom: 5px solid black;
+        border-top: 5px solid black;
+        height: fit-content;
+    }
+    .links{
+        text-decoration: none;
+        background: white;
+        margin-bottom: 22px;
+        width: 50vw;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        border-bottom: 5px solid black;
+        border-top: 5px solid black;    
+    }
 </style>
 </head>
 <body>
+    <div class="separado">
+        <button class="botao" onclick="teste()">Clique aqui</button>
+        <aside class="aside">
+            <div class="aberto">
+                <h1 class="titulo">Acessar projetos:</h1>
+                <a class="links" href="">Animação com Keyframes</a>
+                <a class="links" href="">Calculadora</a>
+                <a class="links" href="">Exemplo localhost</a>
+                <a class="links" href="">Formulário</a>
+                <a class="links" href="">MQTT</a>
+                <a class="links" href="">Pega Teclas</a>
+                <a class="links" href="">Voltar para pagina de projetos</a>
+            </div>
+        </aside>
+    </div>
     <div class="geral">
         <div id="D38"> 
             D38 

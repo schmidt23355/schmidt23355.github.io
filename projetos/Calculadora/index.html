@@ -5,7 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="index.js"></script>
     <title>Calculadora</title>
+    <script defer>
+        function teste(){
+            const aside = document.querySelectorAll(".aside")[0]
+            const aberto = document.querySelectorAll(".aberto")[0]
+            console.log(aside.style.width)
+
+            if(aside.style.width == "0vw"){
+                aside.style.width = "50vw";
+                setTimeout(function() {
+                    aberto.style.display = "flex";
+                }, 450); 
+                
+            }else{
+                aside.style.width = "0vw";
+                aberto.style.display = "none";
+            }
+        }
+    </script>
     <style>
+         *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            width: 100vw;
+            height: fit-content;
+        }
+        .geral{
+            margin-left: 100px;
+        }
+        .botao{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 2;
+        }
+        .separado{
+            width: 50vw;
+            height: 100%;
+        }
+        .titulo{
+            margin-top: 70px;
+            margin-bottom: 30px;
+            background-color: wheat;
+            width: 50vw;
+            display: flex;
+            justify-content: center;
+            border-bottom: 5px solid black;
+            border-top: 5px solid black;
+            height: fit-content;
+        }
+        .links{
+            text-decoration: none;
+            background: white;
+            margin-bottom: 22px;
+            width: 50vw;
+            height: fit-content;
+            display: flex;
+            justify-content: center;
+            border-bottom: 5px solid black;
+            border-top: 5px solid black;    
+        }
+        .aberto{
+            display: none;
+            flex-direction: column;
+            height: 80vw;
+            width: 100vw;
+            align-items: center;
+        }
+        aside{
+            display: flex;
+            transition: 0.5s ease-in-out;
+            background: rgb(226 96 96);
+            position: absolute;
+            width: 0vw;
+            height: -webkit-fill-available;
+            z-index: 1;
+            border-right: 5px solid black;
+            border-bottom: 5px solid black; 
+        }
         .seta{
             width: 100px;
             transform: rotate(270deg);
@@ -17,42 +96,56 @@
     </style>
 </head>
 <body>
-    <div class="seta">
-        <img class="seta" src="./seta.gif" alt="">
+    <div class="separado">
+        <button class="botao" onclick="teste()">Clique aqui</button>
+        <aside class="aside">
+            <div class="aberto">
+                <h1 class="titulo">Acessar projetos:</h1>
+                <a class="links" href="../Animação com keyframes/mar (2).html">Animação com Keyframes</a>
+                <a class="links" href="../Calculadora/index.html">Calculadora</a>
+                <a class="links" href="../Exemplo LocalStorage/index.html">Exemplo localhost</a>
+                <a class="links" href="../Formulario/Maribela.html">Formulário</a>
+                <a class="links" href="../MQTT/indexcerto.html">MQTT</a>
+                <a class="links" href="../Pega teclas/teclas2.html">Pega Teclas</a>
+                <a class="links" href="../../projeto.html">Voltar para pagina de projetos</a>
+            </div>
+        </aside>
     </div>
-    <h1>Calculadora de Área da Superfície de Prisma Triangular</h1>
-    <label for="lado">Lado, b:</label>
-    <input type="number" id="b">
-    <br>
-    <label for="altura">Altura do Triângulo:</label>
-    <input type="number" id="a">
-    <br>
-    <label for="altura_prisma">Altura do Prisma:</label>
-    <input type="number" id="h">
-    <br>
-    <button onclick="calcularArea()">Calcular Área da Superfície</button>
-    <br>
-    <label for="resultado">Área da Superfície do Prisma (m²):</label>
-    <input type="text" id="resultado" disabled>  
-    <p>Fórmula: As = ab + bh + bh + bh</p>
-    <br>
-    <h1>Calculadora de Volume de um Prisma Triangular</h1>
-    <label for="base2">Base do Triângulo (b):</label>
-    <input type="number" id="base_prisma">
-    <br>
-    <label for="altura2">Altura do Triângulo (a):</label>
-    <input type="number" id="alt2">
-    <br>
-    <label for="alt_prisma">Altura do Prisma (h):</label>
-    <input type="number" id="altura_prisma">
-    <br>
-    <button onclick="calcularVolume()">Calcular Volume</button>
-    <br>
-    <label for="resultado2">Volume do Prisma (unidades cúbicas):</label>
-    <input type="text" id="resultado_prisma" disabled>
-    <br>
-    <label for="resultado_base">Resultado da Abase (unidades cúbicas):</label>
-    <input type="text" id="resultado_baseprisma" disabled>
-    <p>Fórmula: V = Abase × altura</p>
+    <div class="geral">
+        <h1>Calculadora de Área da Superfície de Prisma Triangular</h1>
+        <label for="lado">Lado, b:</label>
+        <input type="number" id="b">
+        <br>
+        <label for="altura">Altura do Triângulo:</label>
+        <input type="number" id="a">
+        <br>
+        <label for="altura_prisma">Altura do Prisma:</label>
+        <input type="number" id="h">
+        <br>
+        <button onclick="calcularArea()">Calcular Área da Superfície</button>
+        <br>
+        <label for="resultado">Área da Superfície do Prisma (m²):</label>
+        <input type="text" id="resultado" disabled>  
+        <p>Fórmula: As = ab + bh + bh + bh</p>
+        <br>
+        <h1>Calculadora de Volume de um Prisma Triangular</h1>
+        <label for="base2">Base do Triângulo (b):</label>
+        <input type="number" id="base_prisma">
+        <br>
+        <label for="altura2">Altura do Triângulo (a):</label>
+        <input type="number" id="alt2">
+        <br>
+        <label for="alt_prisma">Altura do Prisma (h):</label>
+        <input type="number" id="altura_prisma">
+        <br>
+        <button onclick="calcularVolume()">Calcular Volume</button>
+        <br>
+        <label for="resultado2">Volume do Prisma (unidades cúbicas):</label>
+        <input type="text" id="resultado_prisma" disabled>
+        <br>
+        <label for="resultado_base">Resultado da Abase (unidades cúbicas):</label>
+        <input type="text" id="resultado_baseprisma" disabled>
+        <p>Fórmula: V = Abase × altura</p>
+    </div>
 </body>
 </html>

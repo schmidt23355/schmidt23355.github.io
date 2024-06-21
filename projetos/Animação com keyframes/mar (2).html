@@ -7,22 +7,22 @@
     <title>Fundo do Mar</title>
     <script defer>
         function teste(){
-          const aside = document.querySelectorAll(".aside")[0]
-          const aberto = document.querySelectorAll(".aberto")[0]
-          console.log(aside.style.width)
+            const aside = document.querySelectorAll(".aside")[0]
+            const aberto = document.querySelectorAll(".aberto")[0]
+            console.log(aside.style.width)
 
-          if(aside.style.width == "0vw"){
-              aside.style.width = "50vw";
-              setTimeout(function() {
-                  aberto.style.display = "flex";
-              }, 450); 
-              
-          }else{
-              aside.style.width = "0vw";
-              aberto.style.display = "none";
-          }
-      }
-  </script>
+            if(aside.style.width == "0vw"){
+                aside.style.width = "50vw";
+                setTimeout(function() {
+                    aberto.style.display = "flex";
+                }, 450); 
+                
+            }else{
+                aside.style.width = "0vw";
+                aberto.style.display = "none";
+            }
+        }
+    </script>
     <style>
         *{
             padding: 0;
@@ -60,8 +60,8 @@
             z-index: 2;
         }
         .separado{
-        width: 50vw;
-        height: 100%;
+            width: 50vw;
+            height: 100%;
         }
         .titulo{
             margin-top: 70px;

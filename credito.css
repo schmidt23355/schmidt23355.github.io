@@ -68,22 +68,6 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
 }
-.parte2{
-    width: 270px;
-    height: 435px;
-    align-items: center;
-    justify-content: space-evenly;
-    display: flex;
-    flex-direction: column;
-}
-.parte3{
-    width: 270px;
-    height: 435px;
-    align-items: center;
-    justify-content: space-evenly;
-    display: flex;
-    flex-direction: column;
-}
 .trab{
     width: 225px;
     height: 195px;
@@ -91,6 +75,7 @@ body{
     flex-direction: column;
     border: 2px solid black;
     margin: 20px;
+    box-shadow: 10px 8px 10px 0px rgba(0, 0, 0, 0.5);
 }
 .titulo{
     width: 225px;

@@ -38,12 +38,8 @@ body{
     height: fit-content;
     display: flex;
     justify-content: space-between;
-<<<<<<< HEAD
     margin-top: -80px;
-=======
-    margin-top: 50px;
->>>>>>> 3de699b49d2661e5e226dcfa2bf8edfc19703601
-    border-bottom: 3px solid rgb(255 255 255);
+    border-bottom: 5px solid rgb(255 255 255);
 }
 .bolinha{
     background-color: yellow;

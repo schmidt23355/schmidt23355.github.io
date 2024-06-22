@@ -51,6 +51,19 @@ body{
     margin-right: 12px;
     font-size: 35px;
 }
+.sticky{
+    background-color: orange;
+    position: sticky;
+    top: 15px;
+    text-align: center;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    width: 200px;
+    border-radius: 10px;
+    border: 5px solid black;
+    font-size: 15px;
+    margin-top: 20px
+}
 .geral{
     display: flex;
     justify-content: center;

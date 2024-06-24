@@ -81,7 +81,6 @@ body{
     flex-direction: column;
     border: 5px solid black;
     border-radius: 30px 10px 30px 10px;
-    box-shadow: 10px 8px 10px 0px rgba(0, 0, 0, 0.5);
 }
 .parte1{
     width: 450px;
@@ -146,4 +145,176 @@ body{
 }
 .gmail{
     font-size: 14px;
+} 
+@media screen and (width < 415px) {
+    body{
+        align-items: flex-start;
+    }
+    .cabecalho{
+        display: none;
+    }
+    .botao{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 2;
+        width: 150px;
+        font-size: 15px;
+        background-color: #47ff50;
+        font-weight: bold;
+    }
+    .separado{
+        width: 50vw;
+        height: 100%;
+        display: block;
+    }
+    .titulos{
+        margin-top: 70px;
+        margin-bottom: 30px;
+        background-color: wheat;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        border-bottom: 5px solid black;
+        border-top: 5px solid black;
+        height: fit-content;
+    }
+    .links{
+        text-decoration: none;
+        background: white;
+        margin-bottom: 22px;
+        width: 100vw;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        border-bottom: 5px solid black;
+        border-top: 5px solid black;    
+    }
+    .aberto{
+        display: none;
+        flex-direction: column;
+        height: 80vw;
+        width: 100vw;
+        align-items: center;
+    }
+    aside{
+        display: flex;
+        transition: 0.5s ease-in-out;
+        background: rgb(226 96 96);
+        position: absolute;
+        width: 0vw;
+        height: 108vh;
+        z-index: 1;
+        border-right: 5px solid black;
+        border-bottom: 5px solid black;
+    }
+    .geral{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        align-items: center;
+        flex-direction: column;
+    }
+    .card{
+        width: 100vw;
+        height: 550px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        border: none;
+        border-radius: 0px;
+    }
+    .parte1{
+        width: 100vw;
+        height: 90px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+        border-top: 5px solid black;
+        border-bottom: 5px solid black;
+        border-radius: 0px;
+        background-color: orange;
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+    .parte2{
+        width: 100vw;
+        height: 260px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 0px;
+        border: none;
+        background-color: white;
+        justify-content: center;
+        border-bottom: 5px solid;
+    }
+    .foto{
+        width: 53%;
+        border-radius: 100%;
+        border: 5px solid;
+    }
+    .parte3{
+        width: 100vw;
+        height: 390px;
+        display: flex;
+        border-radius: 0px;
+        padding-top: 60px
+    }
+    .coluna1{
+        display: flex;
+        font-size: 20px;
+        align-items: center;
+        width: 45vw;
+        height: -webkit-fill-available;
+        padding-left: 5px;   
+    }
+    .titulo{
+        margin-top: 70px;
+        margin-bottom: 30px;
+        background-color: wheat;
+        display: flex;
+        justify-content: center;
+        border-bottom: 5px solid black;
+        border-top: 5px solid black;
+        height: fit-content;
+        width: 100vw;
+        border-right: 5px solid;
+    }
+    .coluna2{
+        width: 55vw;
+        height: -webkit-fill-available;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 15px;
+        border-radius: 0px;
+    }
+    .barra{
+        background-color: #b9b1b19c;
+        width: 50vw;
+        height: 50px;
+        border: 3px solid black;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 15px;
+        margin-bottom: 10px
+    }
+    .gmail {
+        font-size: 12px;
+    }
+    .informacoes2{
+        text-align: center;
+    }
+    .sticky{
+    display: none;
+    }
 }

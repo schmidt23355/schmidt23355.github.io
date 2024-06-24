@@ -77,7 +77,7 @@ body{
 .sticky{
     background-color: orange;
     position: sticky;
-    top: 15px;
+    top: 6px;
     text-align: center;
     padding-bottom: 12px;
     padding-top: 12px;
@@ -85,6 +85,7 @@ body{
     border-radius: 10px;
     border: 5px solid black;
     font-size: 15px;
+    z-index: 1;
 }
 .parte1{
     display: flex;
@@ -101,11 +102,11 @@ body{
     height: 255px;
     background-color: white;
     border: 2px solid black;
-    margin: 20px;
+    margin: 10px;
     box-shadow: 5px 8px 0px rgb(0 0 0);
     animation: anima 2s linear;
     position: relative;
-    left: -0px;
+    left: 0px;
     transform: rotate(0deg);
 }
 @keyframes anima {

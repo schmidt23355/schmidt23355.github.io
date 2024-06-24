@@ -74,7 +74,7 @@ body{
     width: 810px;
     height: 435px;
     margin-top: 50px;
-    overflow: auto;
+    overflow: visible;
 }
 .parte1{
     width: 100vw;

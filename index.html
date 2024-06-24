@@ -9,22 +9,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <title>Página pessoal</title>
     <script defer>
-         function teste(){
-            const aside = document.querySelectorAll(".aside")[0]
-            const aberto = document.querySelectorAll(".aberto")[0]
+        function teste(){
+           const aside = document.querySelectorAll(".aside")[0]
+           const aberto = document.querySelectorAll(".aberto")[0]
+           const geral = document.querySelectorAll(".geral")[0]
+
             if(aside.style.width == "0vw"){
                 aside.style.width = "100vw";
+                geral.style.overflow = "hidden";
                 setTimeout(function() {
                     aberto.style.display = "flex";
                 }, 450); 
                 
-            }
-            else{
+            }else{
+                geral.style.overflow = "auto";
                 aside.style.width = "0vw";
                 aberto.style.display = "none";
             }
         }
-    </script>
+   </script>
 </head>
 <body>
     <div class="separado">

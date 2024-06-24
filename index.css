@@ -28,7 +28,7 @@ body{
     border-bottom: 3px solid rgb(255 255 255);
 }
 .bolinha{
-    background-color: yellow;
+    background: url(./img/dragonball.gif);
     width: 35px;
     height: 35px;
     border-radius: 100%;

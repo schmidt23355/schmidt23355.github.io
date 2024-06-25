@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <title>Exemplo API ViaCEP</title>
+    <link rel="stylesheet" href="localidade.css">
+    <script src="localidade.js" defer></script>
+</head>
+
+<body>
+    <div class="separado">
+        <button class="botao" onclick="teste()">Clique aqui para navegar</button>
+        <aside class="aside">
+            <div class="aberto">
+                <h1 class="titulos">Acessar projetos:</h1>
+                <a class="links" href="localidade.html">Página ver sua localidade</a>
+                <a class="links" href="index.html">Página pessoal</a>
+                <a class="links" href="projeto.html">Página de projeto</a>
+                <a class="links" href="credito.html">Página de licença e créditos</a>
+            </div>
+        </aside>
+    </div>
+    <div class="cabecalho">
+        <div class="nome">
+            <div class="bolinha"></div>
+            <p>Nicolas Schmidt</p>
+        </div>
+        <div class="opcoes">
+            <a href="localidade.html">Página de localidade</a>
+            <p class="traco">||</p>
+            <a href="index.html">Página pessoal</a>
+            <p class="traco">||</p>
+            <a href="projeto.html">Página de projeto</a>
+            <p class="traco">||</p>
+            <a href="credito.html">Página de licença e créditos</a>
+        </div>
+    </div>
+    <form action="#" class="formulario">
+        <div class="sep">
+            <label for="cep" class="canto">CEP</label>
+            <input type="text" id="cep" name="cep">
+            <input type="button" value="Buscar CEP" id="btncep">
+        </div>
+        <div class="sep">
+            <p>Endereço</p>
+        </div>
+        <div class="sep">
+            <label class="canto" for="logradouro">Rua</label>
+            <input type="text" name="logradouro" id="logradouro" disabled>
+        </div>
+        <div class="sep">
+            <label class="canto" for="bairro">Bairro</label>
+            <input type="text" name="bairro" id="bairro" disabled>
+        </div>
+        <div class="sep">
+            <label class="canto" for="localidade">Cidade</label>
+            <input type="text" name="localidade" id="localidade" disabled>
+        </div>
+        <div class="sep">
+            <label class="canto" for="uf">Estado</label>
+            <input type="text" name="uf" id="uf" disabled>
+        </div>
+    </form>
+</body>
+</html>

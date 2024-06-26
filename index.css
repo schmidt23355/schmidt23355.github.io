@@ -153,11 +153,8 @@ body{
 .gmail{
     font-size: 14px;
 } 
-.git{
-    color: blue;
-}
 .git:hover{
-    color: #47ff50;
+    color: blue;
     font-weight: bold;
 }
 @media screen and (width < 415px) {

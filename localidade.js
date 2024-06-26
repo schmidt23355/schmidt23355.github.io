@@ -24,8 +24,9 @@ function buscaCEP(){
         for(let [campo, valor] of Object.entries(json)){
             if(document.getElementById(campo)){
             document.getElementById(campo).value = valor;
-
-
+            }
+            else{
+                alert("CEP INVALIDO");
             }
         }
     })

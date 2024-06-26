@@ -25,9 +25,6 @@ function buscaCEP(){
             if(document.getElementById(campo)){
             document.getElementById(campo).value = valor;
             }
-            else{
-                alert("CEP INVALIDO");
-            }
         }
     })
 }
